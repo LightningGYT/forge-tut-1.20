@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "category": "misc",
+  "ingredients": [
+      {
+        "item": "tut_mod:steel_block"
+      }
+    ],
+    "result": {
+      "item": "tut_mod:steel",
+      "count": 9
+    }
+}
