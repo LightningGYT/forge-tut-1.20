@@ -1,0 +1,11 @@
+{
+  "item.improved_end.steel": "Steel",
+  "item.improved_end.endium_ingot": "Endium Ingot",
+  "item.improved_end.raw_endium": "Raw Endium",
+
+  "block.improved_end.steel_block": "Block of Steel",
+  "block.improved_end.endium_ore": "Endium Ore",
+  "block.improved_end.endium_block": "Block of Endium",
+
+  "creativetab.tut_tab": "Tutorial Tab"
+}
