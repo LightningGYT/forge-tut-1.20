@@ -1,5 +1,7 @@
 {
   "item.tut_mod.steel": "Steel",
 
+  "block.tut_mod.steel_block": "Block of Steel",
+
   "creativetab.tut_tab": "Tutorial Tab"
 }

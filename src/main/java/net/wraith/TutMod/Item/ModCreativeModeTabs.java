@@ -8,6 +8,7 @@ import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.RegistryObject;
 import net.wraith.TutMod.TutMod;
+import net.wraith.TutMod.block.ModBlocks;
 
 public class ModCreativeModeTabs {
     public static final DeferredRegister<CreativeModeTab> CREATE_MODE_TABS =
@@ -19,7 +20,13 @@ public class ModCreativeModeTabs {
                             () -> new ItemStack(ModItem.STEEL.get()))
                             .title(Component.translatable("creativetab.tut_tab"))
                             .displayItems((pParameters, pOutput) -> {
+
+                                //Items
                                 pOutput.accept(ModItem.STEEL.get());
+
+                                //Blocks Items
+                                pOutput.accept(ModBlocks.STEEL_BLOCK.get());
+
                             })
                             .build());
 

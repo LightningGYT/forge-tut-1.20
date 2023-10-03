@@ -1,7 +1,6 @@
 package net.wraith.TutMod;
 
 import com.mojang.logging.LogUtils;
-import net.minecraft.world.item.CreativeModeTabs;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -16,6 +15,7 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import net.wraith.TutMod.Item.ModCreativeModeTabs;
 import net.wraith.TutMod.Item.ModItem;
+import net.wraith.TutMod.block.ModBlocks;
 import org.slf4j.Logger;
 
 // The value here should match an entry in the META-INF/mods.toml file
@@ -33,6 +33,9 @@ public class TutMod
 
         // Registering the Items
         ModItem.register(modEventBus);
+
+        // Registering the Blocks
+        ModBlocks.register(modEventBus);
 
         // Registering the Creative mode tabs
         ModCreativeModeTabs.register(modEventBus);
