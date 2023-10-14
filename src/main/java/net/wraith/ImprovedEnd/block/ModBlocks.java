@@ -1,8 +1,11 @@
 package net.wraith.ImprovedEnd.block;
 
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.MapColor;
@@ -34,11 +37,10 @@ public class ModBlocks {
           () -> new Block(
             BlockBehaviour
                     .Properties
-                    .of()
+                    .copy(Blocks.END_STONE)
                     .mapColor(MapColor.SAND)
                     .requiresCorrectToolForDrops()
                     .strength(5.5f, 9.0f)
-                    .sound(SoundType.STONE)
           ));
 
   public static final RegistryObject<Block> ENDIUM_BLOCK = registerBlock("endium_block",
