@@ -34,6 +34,9 @@ public class ModCreativeModeTabs {
                                 // Other Items
                                 pOutput.accept(ModItem.METAL_DETECTOR.get());
 
+                                // Other Blocks
+                                pOutput.accept(ModBlocks.SOUND_BLOCK.get());
+
                             })
                             .build());
 

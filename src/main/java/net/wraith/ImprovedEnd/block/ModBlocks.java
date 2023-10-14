@@ -15,6 +15,7 @@ import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 import net.wraith.ImprovedEnd.Item.ModItem;
 import net.wraith.ImprovedEnd.ImprovedEnd;
+import net.wraith.ImprovedEnd.block.custom.SoundBlock;
 
 import java.util.function.Supplier;
 
@@ -52,6 +53,13 @@ public class ModBlocks {
                      .requiresCorrectToolForDrops()
                      .strength(5.5f, 9.0f)
                      .sound(SoundType.METAL)
+          ));
+
+  public static final RegistryObject<Block> SOUND_BLOCK = registerBlock("sound_block",
+          () -> new SoundBlock(
+                  BlockBehaviour
+                          .Properties
+                          .copy(Blocks.NOTE_BLOCK)
           ));
 
   private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {

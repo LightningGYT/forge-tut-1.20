@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "key": {
+    "#": {
+      "tag": "minecraft:planks"
+    },
+    "X": {
+      "item": "minecraft:redstone"
+    },
+    "E": {
+      "item": "improved_end:endium_ingot"
+    }
+  },
+  "pattern": [
+    "###",
+    "#X#",
+    "#E#"
+  ],
+  "result": {
+    "item": "improved_end:sound_block"
+  },
+  "show_notification": true
+}
