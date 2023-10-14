@@ -34,14 +34,13 @@ public class ModBlocks {
           ));
 
   public static final RegistryObject<Block> ENDIUM_ORE = registerBlock("endium_ore",
-          () -> new DropExperienceBlock(
+          () -> new Block(
             BlockBehaviour
                     .Properties
                     .copy(Blocks.END_STONE)
                     .mapColor(MapColor.SAND)
                     .requiresCorrectToolForDrops()
-                    .strength(5.5f, 9.0f),
-                  UniformInt.of(3, 6)
+                    .strength(5.5f, 9.0f)
           ));
 
   public static final RegistryObject<Block> ENDIUM_BLOCK = registerBlock("endium_block",
