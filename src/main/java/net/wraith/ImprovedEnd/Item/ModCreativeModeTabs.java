@@ -31,6 +31,9 @@ public class ModCreativeModeTabs {
                                 pOutput.accept(ModItem.RAW_ENDIUM.get());
                                 pOutput.accept(ModItem.ENDIUM_INGOT.get());
 
+                                // Other Items
+                                pOutput.accept(ModItem.METAL_DETECTOR.get());
+
                             })
                             .build());
 
